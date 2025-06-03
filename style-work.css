@@ -1,0 +1,266 @@
+header .works-banner{
+    height: 100vh;
+    display: flex;
+}
+
+header .works-banner .bgc{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background: url(./img/works-bg.png);
+}
+
+header .works-banner .bgc .topic{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    top: 40%;
+    left: 17%;
+    z-index: 1;
+}
+header .works-banner .circle{
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background-color: #F3F2F1;
+    position: absolute;
+    left: 10%;
+    top: 33%;
+    z-index: 1;
+}
+header .works-banner .bgc .topic :nth-child(1){
+    font-size: 28px;
+    font-family: "Noto serif TC";
+    color: #988475;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header .works-banner .bgc .topic :nth-child(2){
+    font-size: 40px;
+    font-family: "Noto serif TC";
+    color: #988475;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+    /* text-align: end; */
+}
+header .works-banner .bgc .topic :nth-child(3){
+    font-size: 16px;
+    width: 40%;
+    /* font-family: "Noto serif TC"; */
+    color: #988475;
+    letter-spacing: 0.16em;
+    line-height: 2;
+}
+header .works-banner .work1-big{
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+
+}
+
+header .works-banner .work1-big img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 52%;
+}
+
+.work-outer-container{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 120px;
+}
+/* .work-outer-container-top{
+    position: relative;
+    margin-right: 0;
+    margin-left: 100%;
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #000;
+} */
+
+.work-container-top{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+    position: relative;
+}
+
+.work-container-top .pic{
+    width: 50%;
+}
+
+.work-container-top .txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.work-container-top .txt .inner-txt{
+    width: 50%;
+    margin: auto;
+    margin-left: 120px;
+    margin-top: 80px; 
+    /* height:50%; */
+
+}
+.work-container-top .txt h3{
+    margin-bottom: 150px;
+    font-size: 32px;
+}
+
+.work-container-middle{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 400px;
+    position: relative;
+}
+
+.work-container-middle .txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container-middle .txt .inner-txt{
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    /* height:80%; */
+
+}
+.work-container-middle .txt h3{
+    margin-bottom: 150px;
+    font-size: 32px;
+}
+.work-container-middle .pic{
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.work-container-middle .pic :nth-child(1){
+    position: absolute;
+    top: -10%;
+}
+
+.work-container-middle .pic :nth-child(2){
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    scale: 0.9;
+
+}
+.work-container-middle .pic :nth-child(3){
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    scale: 0.8;
+
+    
+}
+.work-container-bottom{
+    width: 1200px;
+    margin: auto;
+    /* display: flex; */
+    margin-top: 150px;
+    /* margin-bottom: 250px; */
+    position: relative;
+}
+.work-container-bottom .txt{
+    width: 35%;
+    margin: auto;
+    transform: translateY(15%);
+    /* border: 1px solid #000; */
+}
+
+.work-container-bottom .txt h3{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.work-container-bottom .pic{
+    width: 1200px;
+    display: flex;
+}
+.work-container-bottom .pic-inner{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-container-bottom .pic-inner>*{
+    width: 280px;
+    height: 289px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px -5px gray;
+}
+
+.work-container-bottom .pic .pic2, .work-container-bottom .pic .pic3{
+    align-self: end;
+
+}
+
+.work-container-bottom .pic-inner>*>*{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block-right{
+    width: 55%;
+    height: 150px;
+    position: absolute;
+    background-color: #DFD9D2;
+    right: -50%;
+    top: 11%;
+}
+
+.block-left{
+    width:54%;
+    height: 150px;
+    position: absolute;
+    background-color: #DFD9D2;
+    top: 0%;
+    left: -50%;
+}
+
+
+.block-bottom{
+    width: 150vw;
+    height: 250px;
+    position: absolute;
+    background-color: #DFD9D2;
+    top: 76%;
+    left: -50%;
+    z-index: -1;
+}
+
+.work-outer-container .deco1{
+    /* width: 100vw; */
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+.work-outer-container .deco2{
+    /* width: 100vw; */
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+

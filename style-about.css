@@ -1,0 +1,172 @@
+header .about-banner{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+header .about-banner .bgc{
+    height: 68vh;
+    width: 100%;
+    position: relative;
+    flex-grow: 1;
+    /* z-index: -1; */
+
+}
+header .about-banner .bgc img{
+    height: 100%;
+    width: 100%;
+}
+
+header .about-banner .bgc .topic{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    top: 50%;
+    left: 22%;
+    z-index: 1;
+}
+header .about-banner .circle{
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background-color: #F3F2F1;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    /* z-index: -1; */
+}
+header .about-banner .bgc .topic :nth-child(1){
+    font-size: 40px;
+    font-family: "Noto serif TC";
+    color: #988475;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header .about-banner .bgc .topic :nth-child(2){
+    font-size: 28px;
+    font-family: "Noto serif TC";
+    color: #988475;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    text-align: end;
+}
+
+header .about-banner .pic{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .about-banner .pic img{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.bread{
+    font-size: 16px;
+    color: #988475;
+    max-width: 1200px;
+    margin: 10px auto;
+    letter-spacing: 0.1em;
+}
+
+.about-container{
+    /* max-width: 100%; */
+    margin: 160px auto 220px auto;
+}
+.about-container > * > .col-6{
+    display: flex;
+
+}
+
+.about-container .pic img{
+    width: 485px;
+}
+
+.about-cloth .pic, .about-foam .pic{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    transform: translateX(-50px);
+}
+
+.about-cloth .txt, .about-foam .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 455px;
+    margin-left: 30px;
+
+}
+
+.about-cloth .txt h3, .about-foam .txt h3{
+    font-size: 28px;
+    margin: 0;
+}
+
+.about-wood .col-6:first-child{
+    justify-content: end;
+    align-items: center;
+}
+
+.about-wood .txt{
+    flex-direction: column;
+    align-items: end;
+    width: 455px;
+    justify-content: end;
+    margin-right: 30px;
+
+}
+
+.about-wood .txt h3{
+    /* text-align: right; */
+    font-size: 28px;
+    padding-right: 0px;
+    margin: 0;
+}
+.about-wood .pic{
+    transform: translateX(50px);
+
+}
+
+/* 以下品牌 */
+
+.brand-container{
+    display: flex;
+    /* background: url(./img/footer-bg.png); */
+
+}
+.brand-container .left{
+    width: 54.8%;
+}
+.brand-container .left img{
+    width: 100%;
+    vertical-align: middle;
+}
+.brand-container .right{
+    width: 45.2%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.brand-container .right h3{
+    font-size: 28px;
+}
+.brand-container .right p{
+    font-size: 16px;
+}
+
+
+

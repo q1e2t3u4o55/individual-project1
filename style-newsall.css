@@ -3,11 +3,11 @@
     display: flex;
 }
 .newsall-banner-container .txt{
-    width: 50%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .newsall-banner-container .txt .circle, .newsall-news-all .circle{
@@ -29,7 +29,8 @@
 }
 
 .newsall-banner-container .pic{
-    width: 50%;
+    width: 100%;
+    max-width: 960px;
 }
 
 .newsall-banner-container .pic img{

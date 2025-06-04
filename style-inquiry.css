@@ -1,5 +1,5 @@
 header .inquiry-banner{
-    height: 100vh;
+    height: 50vh;
 }
 header .inquiry-banner .bgc{
     height: 100%;
@@ -12,7 +12,7 @@ header .inquiry-banner .bgc .topic{
     display: flex;
     flex-direction: column;
     width: 54%;
-    top: 50%;
+    top: 25%;
     left: 22%;
     z-index: 1;
 }
@@ -23,7 +23,7 @@ header .inquiry-banner .circle{
     background-color: #F3F2F1;
     position: absolute;
     left: 15%;
-    top: 40%;
+    top: 15%;
     z-index: 1;
 }
 header .inquiry-banner .bgc .topic :nth-child(1){
@@ -47,7 +47,7 @@ header .inquiry-banner .bgc .topic :nth-child(2){
 .inquiry-container{
     width: 1100px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     /* border-bottom: 1px solid #988475; */
     padding: 50px;
     /* border-radius: 5%; */
@@ -138,6 +138,9 @@ input[type="checkbox"]:checked + label::before{
     cursor: pointer;
     /* display: inline; */
 }
+.inquiry-container #file-fake-button .txt:hover{
+    background-color: #C5A68F;
+}
 .inquiry-container #file-fake-button img{
     margin-right: 10px;
     width: 16px;
@@ -169,5 +172,8 @@ input[type="checkbox"]:checked + label::before{
     padding: 15px;
     letter-spacing: 0.16em;
     border-radius: 35px;
-
+}
+.inquiry-container .button input:hover{
+    background-color: #C5A68F;
+    cursor: pointer;
 }

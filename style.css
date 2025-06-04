@@ -23,6 +23,24 @@
     a{
         text-decoration: none;
     }
+    a:link{
+        color: #988475;
+    }
+    a:visited{
+        color: #988475;
+    }
+    a:hover{
+        color: #C5A68F;
+    }
+
+    .title a:hover {
+        color: #C5A68F;
+        /* background-color: #C5A68F ; */
+    }
+
+.title a:hover .rounded-line ,.title a:hover .rounded-line::before, .title a:hover .rounded-line::after{
+    background-color: #C5A68F;
+}
 
     .bread{
         font-size: 16px;
@@ -77,17 +95,20 @@
     color: #988475;
     font-size: 16px;
     /* font-weight: bold; */
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
     }
 
-    .nav-links a:hover {
-    color:  #b1a89d; /* 滑鼠懸停時的顏色，可調整 */
+    .nav-links li a:hover {
+        /* scale: 0.8; */
+        color:  #C5A68F; 
+        /* font-size: large; */
+    
     }
     
 .inquiry-btn {
     display: flex;
-    align-items: center; /* 垂直置中 */
-    justify-content: center; /* 水平置中 */
+    align-items: center; 
+    justify-content: center; 
     width: 150px;
     height: 50px;
     margin:24px ;
@@ -110,7 +131,7 @@
 }
 
 .inquiry-btn:hover {
-    background-color: #b1a89d;
+    background-color: #C5A68F;
 }
 
 /* 以上navbar */
@@ -179,6 +200,7 @@ header .banner .topic{
     
 }
 .rounded-line{
+    margin-top: 20px;
     width: 145px;
     height: 1px;
     background-color: #988475;
@@ -192,14 +214,12 @@ header .banner .topic{
     border-radius: 50%;
     display: block;
     position: absolute;
-}
-.rounded-line::before{
     transform: translateY(-50%);
 }
 
 .rounded-line::after{
     right: 0;
-    transform: translateY(-50%);
+    /* transform: translateY(-100%); */
 }
 
 .rounded-line-knowledge{
@@ -528,7 +548,7 @@ header .banner .topic{
 /* 以下footer */
 footer{
     width: 100%;
-    height: 48vh;
+    height: 40vh;
     background:url("./img/footer-bg.png");
     /* border: 2px solid #988475; */
 }
@@ -550,24 +570,35 @@ footer .logo{
     /* background-color: #fff; */
     flex-grow: 1;
 }
+footer .inner-logo{
+    position: absolute;
+    width: 200px; /* 固定寬度 */
+    height: 200px; /* 固定高度 */
+    left: 40%; /* 居中 */
+    transform: translateX(-50%);
+    top: 4vh; /* 相對於視窗高度 */
+}
 footer .logo .blur-circle{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
     border-radius: 50%;
-    filter: blur(12px);
+    filter: blur(10px);
     position: absolute;
     left: 34.5%;
-    top: 14.5%;
+    top: 12.5%;
 }
-footer .logo img{
-    height: 115px;
+footer .logo a{
+    width: 100px;
+    height: 160px;
     position: absolute;
-    left:38%;
-    top: 20%;
-
+    left:47.5%;
+    top: 21%;
+    /* padding: 10px; */
 }
-
+footer .logo a img{
+width: 100%;
+}
 
 footer .copyright{
     background-color: rgb(255, 255, 255);
@@ -581,12 +612,22 @@ footer .copyright{
     letter-spacing: 0.05em;
 }
 
+footer .footer-items{
+    position: absolute;
+    bottom: 200px;
+    color: #988475;
+    line-height: 1.8;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    z-index: 1;
 
+}
 footer .footer-title{
     position: absolute;
-    top: 40%;
+    top: 42%;
     color: #988475;
     letter-spacing: 0.12em;
+    font-size: 18px;
     /* font-weight: 500; */
 }
 
@@ -596,14 +637,8 @@ footer .left .footer-title{
 footer .right .footer-title{
     left: 40%;
 }
-footer .footer-items{
-    position: absolute;
-    bottom: 200px;
-    color: #988475;
-    line-height: 1.8;
-    font-size: 15px;
-    letter-spacing: 0.12em;
-
+footer .footer-items a{
+    display: block;
 }
 
 footer .footer-items a:link{
@@ -616,10 +651,13 @@ footer .footer-items a:visited{
     text-decoration: none;
 }
 
+footer .footer-items a:hover{
+    color: #C5A68F;
+}
 
 footer .left .footer-items{
     left: 24%;
-    top:52%;
+    top: 52%;
 
 }
 footer .right .footer-items{

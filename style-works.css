@@ -2,9 +2,49 @@ header .works-banner{
     height: 100vh;
 }
 header .works-banner .bgc{
+    display: flex;
     height: 100%;
     overflow: hidden;
     background: url(./img/works-bg.png);
+    justify-content: end;
+    align-items: center;
+}
+header .works-banner .bgc .outer-pic{
+    width: 50%;
+}
+
+header .works-banner .bgc .outer-pic .pic-row{
+    display: flex;
+    transform: translateY(35px);
+    /* transform: translateX(-35px); */
+    margin-right: 35px;
+    justify-content: end;
+    
+}
+header .works-banner .bgc .outer-pic .pic-row1{
+    justify-content:  center;
+    
+}
+header .works-banner .bgc .pic{
+    width: 34%;
+    aspect-ratio: 1/1;
+    /* height: 300px; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+header .works-banner .bgc .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .works-banner .bgc .pic-row1{
+    transform: translateX(50px);
+}
+header .works-banner .bgc .pic-row2 .pic:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 80%;
 }
 
 header .works-banner .bgc .topic{
@@ -155,7 +195,7 @@ header .works-banner .bgc .topic :nth-child(2){
 }
 
 .block-bottom{
-    width: 100vw;
+    width: 100%;
     height: 150px;
     position: absolute;
     background: url(./img/footer-bg.png);

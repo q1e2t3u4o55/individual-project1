@@ -64,7 +64,7 @@ header .inquiry-banner .bgc .topic :nth-child(2){
     color: #988475;
     letter-spacing: 0.16em;
 }
-.inquiry-container input[type="text"]{
+.inquiry-container input[type="text"], .inquiry-container .need-box textarea{
     width: 850px;
     height: 30px;
     border: 1px solid #988475;
@@ -76,9 +76,9 @@ header .inquiry-banner .bgc .topic :nth-child(2){
     letter-spacing: 0.16em;
     padding: 8px;
     background-color: #fff;
+
 }
 .inquiry-container input[type="text"]:focus{
-    background-color: #fff;
     outline: 1px solid #988475;
 }
 .inquiry-container input[type="checkbox"]{
@@ -120,8 +120,14 @@ input[type="checkbox"]:checked + label::before{
 }
 .inquiry-container .need-box #need{
     height: 200px;
+    padding: 10px;
+    line-height: 1.6;
+    resize:none
 }
-
+.inquiry-container .need-box #need:focus{
+    background-color: #fff;
+    outline: 1px solid #988475;
+}
 
 .inquiry-container .file-box .file-inner-box{
     width: 850px;

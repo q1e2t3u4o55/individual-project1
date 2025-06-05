@@ -114,6 +114,7 @@ input[type="checkbox"]:checked + label::before{
 
 .inquiry-container .contact-time-option > label{
     margin-right: 25px;
+    cursor: pointer;
 }
 .inquiry-container .contact-time-option label:last-child{
     margin-right: 0px;

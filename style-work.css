@@ -7,7 +7,7 @@ header .works-banner .bgc{
     width: 50%;
     height: 100%;
     overflow: hidden;
-    background: url(./img/works-bg.png);
+    background: url(./img/footer-bg.png);
 }
 
 header .works-banner .bgc .topic{
@@ -68,6 +68,10 @@ header .works-banner .work1-big img{
     width: 100%;
     object-fit: cover;
     object-position: 52%;
+}
+
+.bread{
+    max-width: 1200px;
 }
 
 .work-outer-container{
@@ -205,7 +209,6 @@ header .works-banner .work1-big img{
     width: 280px;
     height: 289px;
     overflow: hidden;
-    box-shadow: 10px 10px 10px -5px gray;
 }
 
 .work-container-bottom .pic .pic2, .work-container-bottom .pic .pic3{

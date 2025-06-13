@@ -1,53 +1,24 @@
-header .works-banner{
+header .about-banner{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-}
-header .works-banner .bgc{
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-    background: url(./img/works-bg.png);
-    justify-content: end;
-    align-items: center;
-}
-header .works-banner .bgc .outer-pic{
-    width: 50%;
+    position: relative;
 }
 
-header .works-banner .bgc .outer-pic .pic-row{
-    display: flex;
-    transform: translateY(35px);
-    /* transform: translateX(-35px); */
-    margin-right: 35px;
-    justify-content: end;
-    
-}
-header .works-banner .bgc .outer-pic .pic-row1{
-    justify-content:  center;
-    
-}
-header .works-banner .bgc .pic{
-    width: 34%;
-    aspect-ratio: 1/1;
-    /* height: 300px; */
-    border-radius: 50%;
-    overflow: hidden;
-}
-header .works-banner .bgc .pic img{
+header .about-banner .bgc{
+    height: 68vh;
     width: 100%;
+    position: relative;
+    flex-grow: 1;
+    /* z-index: -1; */
+
+}
+header .about-banner .bgc img{
     height: 100%;
-    object-fit: cover;
-}
-header .works-banner .bgc .pic-row1{
-    transform: translateX(50px);
-}
-header .works-banner .bgc .pic-row2 .pic:nth-child(1) img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0% 80%;
 }
 
-header .works-banner .bgc .topic{
+header .about-banner .bgc .topic{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -56,17 +27,17 @@ header .works-banner .bgc .topic{
     left: 22%;
     z-index: 1;
 }
-header .works-banner .circle{
+header .about-banner .circle{
     width: 168px;
     height: 168px;
     border-radius: 50%;
     background-color: #F3F2F1;
     position: absolute;
     left: 15%;
-    top: 40%;
-    z-index: 1;
+    top: 25%;
+    /* z-index: -1; */
 }
-header .works-banner .bgc .topic :nth-child(1){
+header .about-banner .bgc .topic :nth-child(1){
     font-size: 40px;
     font-family: "Noto serif TC";
     color: #988475;
@@ -75,15 +46,32 @@ header .works-banner .bgc .topic :nth-child(1){
     margin-bottom: 20px;
 }
 
-header .works-banner .bgc .topic :nth-child(2){
+header .about-banner .bgc .topic :nth-child(2){
     font-size: 28px;
     font-family: "Noto serif TC";
     color: #988475;
     letter-spacing: 0.2em;
     font-weight: 600;
-    /* text-align: end; */
+    text-align: end;
 }
 
+header .about-banner .pic{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .about-banner .pic img{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.bread{
+    max-width: 1200px;
+}
 /* 以下圖片區*/
 
 .works-outer-container{

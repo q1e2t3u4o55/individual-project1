@@ -926,9 +926,6 @@ footer .logo a{
 footer .logo a img{
     width: 55%;
     height: 55%;
-    
-
-
 }
 
 footer .copyright{
@@ -999,4 +996,102 @@ footer .pic{
 
 footer .pic img{
     margin-right: 15px;
+}
+footer .copyright2{
+    display: none;
+}
+
+
+footer .logo .pic{
+    display: none;
+}
+@media screen and (max-width:850px){
+    footer{
+        height: auto;
+    }
+    footer .footer-container{
+        width: 100%;
+        flex-wrap: wrap;
+        padding-inline: 10px;
+        box-sizing: border-box;
+    }
+    footer .footer-col{
+        height: auto;
+    }
+    footer .footer-col1{
+        width: 100%;
+        justify-content: start;
+    }
+    footer .logo{
+        width: 100%;
+        margin-inline: 0;
+        height: auto;
+    }
+    footer .logo a{
+        margin-top: 0;
+    }
+
+    footer .footer-col2{
+        width: 35%;
+        justify-content: flex-start;
+        
+    }
+    footer .footer-col3{
+        width: 65%;
+        font-size: 16px;
+        justify-content: center;
+    }
+    footer .footer-title{
+        text-align: center;
+    }
+    footer .footer-col2 .footer-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    footer .footer-items{
+        text-align: center;
+
+    }
+
+    footer .footer-items .pic{
+        display: none;
+        /* right: auto;
+        left: 100px;
+        top: -40px; */
+    }
+    
+    footer .logo .pic{
+        display: flex;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        justify-content: center;
+        /* transform: translateY(-10px); */
+    }
+
+    footer .logo .pic img{
+        margin-inline: 5px;
+        width: 25px;
+    }
+    footer .logo .pic-fb img{
+        width: 22px;
+    }
+    footer .copyright{
+        display: none;
+        
+    }
+
+    footer .copyright2{
+        width: 100%;
+        display: block;
+        color: #988475;
+        text-align: center;
+        margin: 15px 0 5px;
+    }
 }

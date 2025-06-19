@@ -45,13 +45,22 @@
     background-color: #C5A68F;
 }
 
+.bread{
+    font-size: 16px;
+    color: #988475;
+    max-width: 50%;
+    margin: 10px auto;
+    letter-spacing: 0.1em;
+}
+@media screen and (max-width:400px){
     .bread{
-        font-size: 16px;
-        color: #988475;
-        max-width: 50%;
-        margin: 10px auto;
-        letter-spacing: 0.1em;
-    }
+        margin-left:10px ;
+        margin-top: 5px;
+        font-weight: 300;
+        font-size: 15px;
+}
+}
+
 /* 以下navbar */
 .navbar {
     width: 100%;
@@ -78,6 +87,7 @@ header .logo img {
     position: absolute;
     top: 10px;
     left: 25px;
+    z-index: 1;
 }
 
 .nav-links {
@@ -272,7 +282,7 @@ header .hb img{
 .inquiry-btn {
     width: 120px;
     height: 35px;
-    margin: 0 10px;
+    margin: 15px 10px;
 }
 .inquiry-btn svg{
     margin-right: 5px;
@@ -289,12 +299,28 @@ header .hb img{
 
 /* 以下詢價欄 */
 .inquiry-col{
-    margin: 15vh 10vh 10vh 15vh;
+    margin: 15vh 15vw 10vh 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 16%;
+}
+
+@media screen and (max-width:850px){
+    .inquiry-col{
+        margin: 5vh 7% 7vh 7%;
+        padding: 0;
+    }
+    .inquiry-col p{
+        margin-bottom: 0px;
+    }
+
+    .inquiry-col .inquiry-btn{
+        height: 40px;
+        width: 125px;
+    }
+
 }
 /* 以上詢價欄 */
 
@@ -1271,6 +1297,9 @@ footer .logo .pic{
     }
 }
 @media screen and (max-width:400px){
+    footer{
+        font-weight: 350;
+    }
     footer .copyright2{
         font-size: 15px;
     }

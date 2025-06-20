@@ -1,145 +1,96 @@
-header .about-banner{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
-}
-
-header .about-banner .bgc{
-    height: 68vh;
-    width: 100%;
-    position: relative;
-    flex-grow: 1;
-    /* z-index: -1; */
-
-}
-header .about-banner .bgc img{
-    height: 100%;
-    width: 100%;
-}
-
-header .about-banner .bgc .topic{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 54%;
-    top: 50%;
-    left: 22%;
-    z-index: 1;
-}
-header .about-banner .circle{
-    width: 168px;
-    height: 168px;
-    border-radius: 50%;
-    background-color: #F3F2F1;
-    position: absolute;
-    left: 15%;
-    top: 25%;
-    /* z-index: -1; */
-}
-header .about-banner .bgc .topic :nth-child(1){
-    font-size: 40px;
-    font-family: "Noto serif TC";
-    color: #988475;
-    letter-spacing: 0.2em;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-header .about-banner .bgc .topic :nth-child(2){
-    font-size: 28px;
-    font-family: "Noto serif TC";
-    color: #988475;
-    letter-spacing: 0.2em;
-    font-weight: 600;
+header .about-banner .bgc .topic .span-sub{
+    width: 120%;
     text-align: end;
 }
+@media screen and (max-width:850px){
+    header .about-banner .circle{
+        left: -10%;
+    }
 
-header .about-banner .pic{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    header .about-banner .bgc .topic{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+    header .about-banner .bgc .topic .span-pri{
+        font-size: 30px;
+        padding-left: 8%;
+    }
+    header .about-banner .bgc .topic .span-sub{        
+        width: 100%;
+        font-size: 24px;
+        letter-spacing: 0.16em;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:400px){
+    header .about-banner .circle{
+        left: -5%;
+    }
+    header .about-banner .bgc .topic .span-pri{
+        font-size: 24px;
+    }
+    header .about-banner .bgc .topic .span-sub{
+        width: 100%;
+        font-size: 18px;
+    }
 }
 
-header .about-banner .pic img{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    width: 25%;
-}
-
-.bread{
-    font-size: 16px;
-    color: #988475;
-    /* max-width: 1200px; */
-    margin: 10px auto;
-    letter-spacing: 0.1em;
-}
+/* 以上banner */
 
 .about-container{
-    max-width: 1024px;
-    margin: 160px auto 220px auto;
-
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+    /* padding-inline: 25%; */
+    gap: 50px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.about-container > * > .col-6{
-    display: flex;
-
-}
-
 .about-container .pic img{
-    width: 80%;
-    /* aspect-ratio: 1/1; */
-    /* height: auto; */
-    /* object-fit: cover; */
-}
-
-.about-cloth .pic, .about-foam .pic{
-    /* width: 100%; */
-    display: flex;
-    justify-content: end;
-    transform: translateX(-50px);
-}
-
-.about-cloth .txt, .about-foam .txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 455px;
-    margin-left: 30px;
+    width: 100%;
 
 }
-
-.about-cloth .txt h3, .about-foam .txt h3{
-    font-size: 28px;
-    margin: 0;
+.about-container .txt{
+ padding-top: 45px;
 }
 
-.about-wood .col-6:first-child{
-    justify-content: end;
-    align-items: center;
+@media screen and (max-width:850px){
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        gap: 0;
+        padding-inline: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .about-container div:nth-child(3){
+        grid-row: 4;
+    }
+    .about-container div:nth-child(4){
+        grid-row: 3;
+    }
+    .about-container .txt{
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+
+    .about-container h3{
+        font-size: 28px;
+        text-align: center;
+    }
 }
-
-.about-wood .txt{
-    flex-direction: column;
-    align-items: end;
-    width: 420px;
-    justify-content: end;
-    /* margin-right: 30px; */
-
+@media screen and (max-width:400px){
+    .about-container h3{
+        font-size: 20px;
+    }
 }
-
-.about-wood .txt h3{
-    /* text-align: right; */
-    font-size: 28px;
-    padding-right: 0px;
-    margin: 0;
-}
-.about-wood .pic{
-    transform: translateX(50px);
-
-}
-
 /* 以下品牌 */
 
 .brand-container{
@@ -148,17 +99,17 @@ header .about-banner .pic img{
 
 }
 .brand-container .left{
-    width: 54.8%;
+    width: 55%;
 }
 .brand-container .left img{
     width: 100%;
     vertical-align: middle;
 }
 .brand-container .right{
-    width: 45.2%;
+    width: 45%;
     color: #fff;
     box-sizing: border-box;
-    padding: 0 6em;
+    padding: 0 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,6 +121,25 @@ header .about-banner .pic img{
 }
 .brand-container .right p{
     font-size: 16px;
+}
+@media screen and (max-width:850px){
+    .brand-container{
+        display: block;
+    }
+    .brand-container .right h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .brand-container .left{
+        margin: auto;
+        width: 100%;
+    }
+    .brand-container .right{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        width: 100%;
+        padding-inline: 50px;
+    }
 }
 
 

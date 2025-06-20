@@ -1,85 +1,15 @@
-header .about-banner{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
-}
-
-header .about-banner .bgc{
-    height: 68vh;
-    width: 100%;
-    position: relative;
-    flex-grow: 1;
-    /* z-index: -1; */
-
-}
-header .about-banner .bgc img{
-    height: 100%;
-    width: 100%;
-}
-
-header .about-banner .bgc .topic{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 54%;
-    top: 50%;
-    left: 22%;
-    z-index: 1;
-}
-header .about-banner .circle{
-    width: 168px;
-    height: 168px;
-    border-radius: 50%;
-    background-color: #F3F2F1;
-    position: absolute;
-    left: 15%;
-    top: 25%;
-    /* z-index: -1; */
-}
-header .about-banner .bgc .topic :nth-child(1){
-    font-size: 40px;
-    font-family: "Noto serif TC";
-    color: #988475;
-    letter-spacing: 0.2em;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-header .about-banner .bgc .topic :nth-child(2){
-    font-size: 28px;
-    font-family: "Noto serif TC";
-    color: #988475;
-    letter-spacing: 0.2em;
-    font-weight: 600;
-    text-align: end;
-}
-
-header .about-banner .pic{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-header .about-banner .pic img{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    width: 25%;
-}
 
 .bread{
     max-width: 1200px;
 }
 /* 以下圖片區*/
-
+@media screen and (min-width:1201px){
 .works-outer-container{
     position: relative;
 }
 
 .works-container {
-    width: 1200px;
+    max-width: 1200px;
     /* background-color: #c4a5a5; */
     margin: 180px auto;
 
@@ -127,7 +57,9 @@ header .about-banner .pic img{
     display: flex;
     opacity: 0;
 }
-
+.works-item .hover .x{
+    display: none;
+}
 .works-item:nth-child(12n+1) .hover,
 .works-item:nth-child(12n+7) .hover{
     width: 745px;
@@ -160,10 +92,7 @@ header .about-banner .pic img{
 .works-item:hover :nth-child(2){
     opacity: 1;
     transition: 0.5s;
-}
 
-.block{
-    background-color: #DFD9D2;
 }
 
 .block-left{
@@ -189,4 +118,95 @@ header .about-banner .pic img{
     background: url(./img/footer-bg.png);
     top: 96%;
     left: 0%;
+}
+}
+@media screen and (max-width:1200px){
+    .bread{
+        margin-left:10%;
+    }
+    [class*="block-"]{
+        display: none;
+    }
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-inline: 10%;
+        margin-top: 80px;
+        gap: 20px;
+    }
+    .works-item{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        /* margin-top: 20px; */
+        position: relative;
+        aspect-ratio: 440/335;
+    }
+    .works-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+
+
+    /* .works-item:nth-child(12n+1),
+    .works-item:nth-child(12n+7){
+        width: 100%;
+
+    } */
+    .works-container .hover.-on{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* margin: 5%; */
+        background-color: rgb(0,0,0,0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .works-container .hover{
+        display: none;
+    }
+    .works-item .hover .x{
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .works-container .hover .txt{
+        margin: 8%;
+        
+    }
+    .works-container .hover h3{
+        font-size: 20px;
+        margin: 0;
+        color: #fff;
+        font-weight: 400;
+    }
+    .works-container .hover p{
+        margin-bottom: 0;
+        color: #fff;
+    }
+}
+@media screen and (max-width:850px){
+    .works-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:400px){
+    .works-container .hover h3{
+        font-size: 20px;
+        margin: 0;
+        color: #fff;
+        font-weight: 400;
+    }
+    .works-container .hover p{
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 5px;
+    }
 }

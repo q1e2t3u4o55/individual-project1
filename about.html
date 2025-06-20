@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-newsall.css">
     <link rel="stylesheet" href="style-about.css">
+    <script src="./vendors/fontawesome-free-6.7.2-web/js/all.min.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                 <a href="./order.html"><li>沙發小學堂<img src="./img/nav-crown.png" alt=""></li></a>
             </ul>
             <a class="inquiry-btn" href="./inquiry.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+                <i class="fa-solid fa-phone-volume"></i>
                 <span>立即詢價</span>
             </a>
             
@@ -36,18 +39,26 @@
         <div class="about-banner">
             
             <div class="bgc">
-                <img src="./img/footer-bg.png" alt="">
                 <div class="topic">
-                <span>關於金豪座</span>
-                <span>我們的堅持，我們的價值</span>
+                    <div class="circle"></div>
+                    <span class="span-pri">關於金豪座</span>
+                    <span class="span-sub">我們的堅持，我們的價值</span>
+    
                 </div>
             </div>
-            <div class="circle"></div>
+            
             <div class="pic">
-                <img src="./img/aobut-banner1.png" alt="">
-                <img src="./img/about-banner2.png" alt="">
-                <img src="./img/aobut-banner3.png" alt="">
-                <img src="./img/aobut-banner4.png" alt="">
+                <div class="carousel-container">
+                <div><img src="./img/about-banner1.png" alt=""></div>
+                <div><img src="./img/about-banner2.png" alt=""></div>
+                <div><img src="./img/about-banner3.png" alt=""></div>
+                <div><img src="./img/about-banner4.png" alt=""></div>
+
+                <div><img src="./img/about-banner1.png" alt=""></div>
+                <div><img src="./img/about-banner2.png" alt=""></div>
+                <div><img src="./img/about-banner3.png" alt=""></div>
+                <div><img src="./img/about-banner4.png" alt=""></div>
+            </div>
             </div>
         </div>
     </header>
@@ -55,58 +66,37 @@
     <div class="bread">
         <a href="./index.html">首頁</a> / 關於金豪座
     </div>
-    <div class="container about-container">
-        <div class="row about-cloth">
-            
-            <div class="col-6">
-                <div class="pic">
-                    <img src="./img/about-cloth.png" alt="">
-                </div>
+    <div class="about-container">
+        
+            <div class="pic">
+                <img src="./img/about-cloth.png" alt="">
             </div>
 
-            <div class="col-6">
-                <div class="txt">
-                    <h3>布料</h3>
-                    <p>布料部分選用天然纖維混紡，透氣性佳且抗污防霉，經過特殊處理，耐磨度高達50,000次以上的耐摩擦測試；皮革則來自頂級供應商，採用全粒面牛皮，觸感柔軟且具自然紋理，抗撕裂強度達20N/mm，經久不褪色。</p>
-                </div>
+            <div class="txt">
+                <h3>布料</h3>
+                <p>布料部分選用天然纖維混紡，透氣性佳且抗污防霉，經過特殊處理，耐磨度高達50,000次以上的耐摩擦測試；皮革則來自頂級供應商，採用全粒面牛皮，觸感柔軟且具自然紋理，抗撕裂強度達20N/mm，經久不褪色。</p>
             </div>
             
-        </div>
-
-        <div class="row about-wood">
-            
-            <div class="col-6">
-                <div class="txt">
-                    <h3>木材</h3>
-                    <p>經過嚴格乾燥處理，水分含量控制在8%-10%，有效防止變形與開裂，承重力高達每平方公分300公斤以上。表面施以天然木蠟油塗層，保留木材原有的溫潤觸感與自然紋理，同時耐腐蝕，抗菌性能提升30%。</p>
-                </div>
+            <div class="txt">
+                <h3>木材</h3>
+                <p>經過嚴格乾燥處理，水分含量控制在8%-10%，有效防止變形與開裂，承重力高達每平方公分300公斤以上。表面施以天然木蠟油塗層，保留木材原有的溫潤觸感與自然紋理，同時耐腐蝕，抗菌性能提升30%。</p>
             </div>
 
-            
-            <div class="col-6">
-                <div class="pic">
-                    <img src="./img/about-wood.png" alt="">
-                </div>
+
+        
+            <div class="pic">
+                <img src="./img/about-wood.png" alt="">
             </div>
 
-        </div>
-
-        <div class="row about-foam">
-            
-            <div class="col-6">
-                <div class="pic">
-                    <img src="./img/about-foam.png" alt="">
-                </div>
+            <div class="pic">
+                <img src="./img/about-foam.png" alt="">
             </div>
 
-            <div class="col-6">
-                <div class="txt">
-                    <h3>泡棉</h3>
-                    <p>採用頂級高密度聚氨酯泡棉，密度達35kg/m³以上，確保卓越的支撐力與耐用性。經過嚴格耐壓測試，可承受10萬次以上坐壓而不變形，回彈率高達98%；抗菌防霉性能提升40%，有效抑制細菌滋生。</p>
-                </div>
+            <div class="txt">
+                <h3>泡棉</h3>
+                <p>採用頂級高密度聚氨酯泡棉，密度達35kg/m³以上，確保卓越的支撐力與耐用性。經過嚴格耐壓測試，可承受10萬次以上坐壓而不變形，回彈率高達98%；抗菌防霉性能提升40%，有效抑制細菌滋生。</p>
             </div>
             
-        </div>
 
         </div>
     </div>
@@ -125,7 +115,7 @@
         <p>
         打造屬於您的完美沙發，從現在開始！金豪座家具提供簡單便捷的訂製流程，只需填寫下方表單，告訴我們您的需求—包括沙發尺寸、布料或皮革選擇、顏色及特殊設計偏好。我們提供免費到府丈量與專業建議，確保每件細節都符合您的期待。提交訂單後，我們將在24小時內與您聯繫，開啟訂製之旅。立即行動，讓舒適與風格完美融入您的家居！</p>
         <a class="inquiry-btn" href="./inquiry.html">
-            <img src="./img/phone.png" alt="phone">
+            <i class="fa-solid fa-phone-volume"></i>
             <span>立即詢價</span>
         </a>
     </div>
@@ -145,10 +135,10 @@
                 <!-- </div> -->
                 <div class="pic">
                     <div class="pic-line">
-                        <img src="./img/lineicon.png" alt="">
-                    </div>
-                    <div class="pic-fb">
-                        <img src="./img/fbicon.png" alt="">
+                        <i class="fa-brands fa-line"></i>
+                </div>
+                <div class="pic-fb">
+                    <i class="fa-brands fa-square-facebook"></i>
                     </div>   
                 </div>     
             </div>
@@ -172,15 +162,15 @@
                 
             </div>
             <div class="footer-items">
-                電話:02-1234-5678<br>
-                <!-- 電子郵件: service@kinghozo.com<br> -->
-                地址:台北市中山區中山北路一段000號<br>
+                <span>電話:<wbr>02-12345678<br></span>
+                <span>電子郵件: service<wbr>@kinghozo.com<br></span>
+                <span>地址:台北市<wbr>中山區<wbr>中山北路一段0號<br></span>
                 <div class="pic">
                     <div class="pic-line">
-                        <img src="./img/lineicon.png" alt="">
-                    </div>
-                    <div class="pic-fb">
-                        <img src="./img/fbicon.png" alt="">
+                        <i class="fa-brands fa-line"></i>
+                </div>
+                <div class="pic-fb">
+                    <i class="fa-brands fa-square-facebook"></i>
                     </div>   
                 </div>
             </div>
@@ -191,12 +181,11 @@
             </div>
             
     </div>
-    
-    
-    
     </footer>
+
     <script src="./vendors/jquery-3.7.1.min.js"></script>
     <script src="./vendors/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    
+    
 </body>
 </html>

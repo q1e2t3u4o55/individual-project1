@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style-works.css">
+    <link rel="stylesheet" href="style-newsall.css">
+    <script src="./vendors/fontawesome-free-6.7.2-web/js/all.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                 <a href="./order.html"><li>沙發小學堂<img src="./img/nav-crown.png" alt=""></li></a>
             </ul>
             <a class="inquiry-btn" href="./inquiry.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+                <i class="fa-solid fa-phone-volume"></i>
                 <span>立即詢價</span>
             </a>
             
@@ -36,17 +38,26 @@
         <div class="about-banner">
             
             <div class="bgc">
-                <img src="./img/footer-bg.png" alt="">
                 <div class="topic">
-                <span>匠心之作</span>
+                    <div class="circle"></div>
+                    <span class="span-pri">匠心之作</span>
+
+    
                 </div>
             </div>
-            <div class="circle"></div>
+            
             <div class="pic">
-                <img src="./img/aobut-banner1.png" alt="">
-                <img src="./img/about-banner2.png" alt="">
-                <img src="./img/aobut-banner3.png" alt="">
-                <img src="./img/aobut-banner4.png" alt="">
+                <div class="carousel-container">
+                <div><img src="./img/about-banner1.png" alt=""></div>
+                <div><img src="./img/about-banner2.png" alt=""></div>
+                <div><img src="./img/about-banner3.png" alt=""></div>
+                <div><img src="./img/about-banner4.png" alt=""></div>
+
+                <div><img src="./img/about-banner1.png" alt=""></div>
+                <div><img src="./img/about-banner2.png" alt=""></div>
+                <div><img src="./img/about-banner3.png" alt=""></div>
+                <div><img src="./img/about-banner4.png" alt=""></div>
+            </div>
             </div>
         </div>
     </header>
@@ -60,44 +71,60 @@
     <div class="block-left"></div>
     <div class="block-right"></div>
     <div class="block-bottom"></div>
+
     <div class="works-container">
         <!-- /*這裡面不能再加東西，順序會亂掉*/ -->
         <div class="works-item item1">
             <img src="./img/about-brand.png" alt="">
-            <a class="hover" href="./work.html"><div class="txt"><h3>海風之歌</h3><p>沉浸於南歐的浪漫風情，以湛藍與白色調搭配，完美詮釋海風拂面的輕鬆氛圍，面料選用透氣的亞麻混紡，適合小坪數客廳或陽台。</p></div></a>
+            <a class="hover" href="./work.html">
+                <div class="x"><i class="fa-solid fa-xmark"></i></div>
+                <div class="txt">
+                    <h3>海風之歌</h3>
+                    <p>沉浸於南歐的浪漫風情，以湛藍與白色調搭配，完美詮釋海風拂面的輕鬆氛圍，面料選用透氣的亞麻混紡，適合小坪數客廳或陽台。</p>
+                </div>
+            </a>
         </div>
-        <div class="works-item item2"><img src="./img/works2.png" alt=""><div class="hover"><div class="txt"><h3>冰川之靜</h3><p>猶如冰川的冷冽優雅，淺藍與金屬元素交織出純淨的現代感。</p></div></div></div>
-        <div class="works-item item3"><img src="./img/works3.png" alt=""><div class="hover"><div class="txt"><h3>金砂輝映</h3><p>帶來沙灘金光般的溫暖，柔和線條回味歲月沉澱的優雅。
+        <div class="works-item item2">
+            <img src="./img/works2.png" alt="">
+            <div class="hover">
+                <div class="x"><i class="fa-solid fa-xmark"></i></div>
+                <div class="txt">
+                    <h3>冰川之靜</h3>
+                    <p>猶如冰川的冷冽優雅，淺藍與金屬元素交織出純淨的現代感。</p>
+                </div>
+            </div>
+        </div>
+        <div class="works-item item3"><img src="./img/works3.png" alt=""><div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>金砂輝映</h3><p>帶來沙灘金光般的溫暖，柔和線條回味歲月沉澱的優雅。
         </p></div></div></div>
         <div class="works-item item4">
             <img src="./img/works4.png" alt="">
-        <div class="hover"><div class="txt"><h3>日落餘暉</h3><p>宛如夕陽下的溫暖餘韻，手工編織設計增添鄉土情懷。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>日落餘暉</h3><p>宛如夕陽下的溫暖餘韻，手工編織設計增添鄉土情懷。</p></div></div></div>
         <div class="works-item item5">
             <img src="./img/works1.png" alt="">
-        <div class="hover"><div class="txt"><h3>雲端夢想</h3><p>宛如漂浮雲端的輕盈夢想，米白色調帶來純粹與放鬆的空間體驗。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>雲端夢想</h3><p>宛如漂浮雲端的輕盈夢想，米白色調帶來純粹與放鬆的空間體驗。</p></div></div></div>
         <div class="works-item item6">
             <img src="./img/works6.png" alt="">
-        <div class="hover"><div class="txt"><h3>星辰之擁</h3><p>深邃如星空的客廳設計，結合奢華與簡約，散發神秘高雅氣息。 
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>星辰之擁</h3><p>深邃如星空的客廳設計，結合奢華與簡約，散發神秘高雅氣息。 
         </p></div></div></div>
         <div class="works-item item7">
             <img src="./img/works7.png" alt="">
-        <div class="hover"><div class="txt"><h3>晨曦暖意</h3><p>以北歐風格為靈感，彷彿清晨第一道陽光灑落，溫暖而柔和。淺色線條勾勒出簡約輪廓，搭配自然木質元素，營造清新自然的居家氛圍。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>晨曦暖意</h3><p>以北歐風格為靈感，彷彿清晨第一道陽光灑落，溫暖而柔和。淺色線條勾勒出簡約輪廓，搭配自然木質元素，營造清新自然的居家氛圍。</p></div></div></div>
         <div class="works-item item8">
             <img src="./img/works8.png" alt="">
-        <div class="hover"><div class="txt"><h3>琥珀時光</h3><p>呈現粗獷與復古的融合，深棕色調帶來穩重而有故事的空間感。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>琥珀時光</h3><p>呈現粗獷與復古的融合，深棕色調帶來穩重而有故事的空間感。</p></div></div></div>
         <div class="works-item item9">
             <img src="./img/works9.png" alt="">
-        <div class="hover"><div class="txt"><h3>月影輕語</h3><p>如月光下的靜謐，無邊際設計展現純粹與現代的和諧美學。 </p></div></div>    </div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>月影輕語</h3><p>如月光下的靜謐，無邊際設計展現純粹與現代的和諧美學。 </p></div></div>    </div>
         <div class="works-item item10">
             <img src="./img/works10.png" alt="">
-        <div class="hover"><div class="txt"><h3>紅酒之韻</h3><p>猶如紅酒般的濃郁奢華，雕花細節增添傳統貴族氣質。
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>紅酒之韻</h3><p>猶如紅酒般的濃郁奢華，雕花細節增添傳統貴族氣質。
         </p></div></div></div>
         <div class="works-item item11">
             <img src="./img/works11.png" alt="">
-        <div class="hover"><div class="txt"><h3>森林靜謐</h3><p>宛如置身靜謐森林，輕淺色調創造寧靜與自然的居家氛圍。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>森林靜謐</h3><p>宛如置身靜謐森林，輕淺色調創造寧靜與自然的居家氛圍。</p></div></div></div>
         <div class="works-item item12">
             <img src="./img/works12.png" alt="">
-        <div class="hover"><div class="txt"><h3>翡翠之華</h3><p>如玉石般的華麗氣質，水晶裝飾展現高雅與精緻的奢華風範。</p></div></div></div>
+        <div class="hover"><div class="x"><i class="fa-solid fa-xmark"></i></div><div class="txt"><h3>翡翠之華</h3><p>如玉石般的華麗氣質，水晶裝飾展現高雅與精緻的奢華風範。</p></div></div></div>
     </div>
 
 </div>
@@ -106,7 +133,7 @@
     <p>
     打造屬於您的完美沙發，從現在開始！金豪座家具提供簡單便捷的訂製流程，只需填寫下方表單，告訴我們您的需求—包括沙發尺寸、布料或皮革選擇、顏色及特殊設計偏好。我們提供免費到府丈量與專業建議，確保每件細節都符合您的期待。提交訂單後，我們將在24小時內與您聯繫，開啟訂製之旅。立即行動，讓舒適與風格完美融入您的家居！</p>
     <a class="inquiry-btn" href="./inquiry.html">
-        <img src="./img/phone.png" alt="phone">
+        <i class="fa-solid fa-phone-volume"></i>
         <span>立即詢價</span>
     </a>
 </div>
@@ -153,15 +180,15 @@
                 
             </div>
             <div class="footer-items">
-                電話:02-1234-5678<br>
-                <!-- 電子郵件: service@kinghozo.com<br> -->
-                地址:台北市中山區中山北路一段000號<br>
+                <span>電話:<wbr>02-12345678<br></span>
+                <span>電子郵件: service<wbr>@kinghozo.com<br></span>
+                <span>地址:台北市<wbr>中山區<wbr>中山北路一段0號<br></span>
                 <div class="pic">
                     <div class="pic-line">
-                        <img src="./img/lineicon.png" alt="">
+                        <i class="fa-brands fa-line"></i>
                     </div>
                     <div class="pic-fb">
-                        <img src="./img/fbicon.png" alt="">
+                        <i class="fa-brands fa-square-facebook"></i>
                     </div>   
                 </div>
             </div>
@@ -178,6 +205,25 @@
     </footer>
     <script src="./vendors/jquery-3.7.1.min.js"></script>
     <script src="./vendors/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".works-item").click(function(){
+                //console.log(this);
+                $(this).children(".hover").addClass("-on");
+            })
+
+            $(".x").click(function(e){
+                console.log(this.closest(".hover"));
+                e.preventDefault();
+                e.stopPropagation();
+                $(this).closest(".hover").removeClass("-on");
+                
+            })
+        })
+
+        
+
+        
+    </script>
 </body>
 </html>

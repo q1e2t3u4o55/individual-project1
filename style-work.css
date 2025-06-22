@@ -69,7 +69,101 @@ header .works-banner .work1-big img{
     object-fit: cover;
     object-position: 52%;
 }
+@media screen and (max-width:1200px){
+    header .works-banner .bgc{
+        width: 40%;
+    }
+    header .works-banner .work1-big{
+        width: 60%;
+    }
+    header .works-banner .bgc .topic {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-40%);
+    }
+    header .works-banner .circle{
+        left: 0;
+        top: 25%;
+    }
+    header .works-banner .bgc .topic :nth-child(3){
+        width: 60%;
+    }
+    @media screen and (max-height:535px){
+        header .works-banner .bgc .topic :nth-child(1){
+            font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 5px;
+        }
+        header .works-banner .bgc .topic :nth-child(2){
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width:850px){
+    header .works-banner{
+        display: block;
+        height: 800px;
+    }
+    header .works-banner .bgc{
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    header .works-banner .work1-big{
+        width: 100%;
+        height: 50%;
+    }
+    header .works-banner .bgc .topic{
+        top: 130px;
+        left: 10%;
+        transform: translateY(0);
+        width: 80%;
+        margin-top: 0;
+    }
+    header .works-banner .circle{
+        top: 100px;
+    }
+    header .works-banner .bgc .topic :nth-child(1){
+        margin-top: 0;
+        font-size: 24px;
+    }
+    
+    header .works-banner .bgc .topic :nth-child(2){
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+    header .works-banner .bgc .topic :nth-child(3){
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px){
+    header .works-banner{
+        display: block;
+        height: 650px;
+    }
+    header .works-banner .bgc{
+        height: 60%;
+    }
+    header .works-banner .circle{
+        top: 70px;
+    }
+    header .works-banner .work1-big{
+        height: 40%;
+    }
+    header .works-banner .bgc .topic{
+        top: 105px;
+    }
+    header .works-banner .bgc .topic :nth-child(1){
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    header .works-banner .bgc .topic :nth-child(2){
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
 
+}
 .bread{
     max-width: 1200px;
 }
@@ -91,7 +185,9 @@ header .works-banner .work1-big img{
 } */
 
 .work-container-top{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    /* width: 1200px; */
     margin: auto;
     display: flex;
     margin-top: 150px;
@@ -102,6 +198,9 @@ header .works-banner .work1-big img{
     width: 50%;
 }
 
+.work-container-top .pic img{
+    width: 100%;
+}
 .work-container-top .txt{
     width: 50%;
     display: flex;
@@ -110,20 +209,24 @@ header .works-banner .work1-big img{
 }
 
 .work-container-top .txt .inner-txt{
-    width: 50%;
+    width: 55%;
     margin: auto;
-    margin-left: 120px;
-    margin-top: 80px; 
+    margin-left: 20%;
+    margin-top: 18%; 
     /* height:50%; */
 
 }
 .work-container-top .txt h3{
-    margin-bottom: 150px;
+    margin-bottom: 2em;
     font-size: 32px;
 }
 
+@media screen and (max-width:850px){
+
+}
 .work-container-middle{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     margin-top: 150px;
@@ -139,43 +242,54 @@ header .works-banner .work1-big img{
 
 .work-container-middle .txt .inner-txt{
     width: 50%;
+    min-width: 269px;
     margin: auto;
     margin-top: 0;
     /* height:80%; */
 
 }
 .work-container-middle .txt h3{
-    margin-bottom: 150px;
+    margin-bottom: 2em;
     font-size: 32px;
 }
 .work-container-middle .pic{
     width: 50%;
+    height: 30vw;
+    max-height: 349px;
     display: flex;
     position: relative;
 }
 
-.work-container-middle .pic :nth-child(1){
+.work-container-middle .pic .pic1{
     position: absolute;
+    width: 50%;
     top: -10%;
 }
-
-.work-container-middle .pic :nth-child(2){
+.work-container-middle .pic .pic1 img{
+    width: 100%;
+}
+.work-container-middle .pic .pic2{
     position: absolute;
     left: 60%;
     top: 30%;
-    scale: 0.9;
+    width: 40%;
 
 }
-.work-container-middle .pic :nth-child(3){
+.work-container-middle .pic .pic2 img{
+    width: 100%;
+}
+.work-container-middle .pic .pic3{
     position: absolute;
-    top: 110%;
+    top: 130%;
     left: 15%;
-    scale: 0.8;
-
-    
+    width: 35%;
+}
+.work-container-middle .pic .pic3 img{
+    width: 100%;
 }
 .work-container-bottom{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     /* display: flex; */
     margin-top: 150px;
@@ -185,34 +299,49 @@ header .works-banner .work1-big img{
 .work-container-bottom .txt{
     width: 35%;
     margin: auto;
-    transform: translateY(15%);
+    /* min-width: 420px;s */
     /* border: 1px solid #000; */
+}
+@media screen and (min-width:1101px){
+    .work-container-bottom .txt{
+
+    transform: translateY(15%);
+    }
 }
 
 .work-container-bottom .txt h3{
+    font-size: 32px;
     text-align: center;
     margin-bottom: 50px;
 
 }
 .work-container-bottom .pic{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
 }
 .work-container-bottom .pic-inner{
     width: 100%;
-    height: 400px;
+    height: 30vw;
+    max-height: 380px;
     display: flex;
     justify-content: space-between;
 }
 
 .work-container-bottom .pic-inner>*{
-    width: 280px;
-    height: 289px;
+    /* width: 24%; */
+    width: 24%;
+    height: 100%;
     overflow: hidden;
 }
+.work-container-bottom .pic .pic1, .work-container-bottom .pic .pic4{
+    /* align-self: end; */
+    padding-bottom: 7%;
 
+}
 .work-container-bottom .pic .pic2, .work-container-bottom .pic .pic3{
-    align-self: end;
+    /* align-self: end; */
+    padding-top: 7%;
 
 }
 
@@ -251,19 +380,25 @@ header .works-banner .work1-big img{
 }
 
 .work-outer-container .deco1{
+    width: 40%;
     /* width: 100vw; */
-    height: 150px;
+    /* height: 800%; */
     position: absolute;
     top: 25%;
     right: 0%;
 }
+.work-outer-container .deco1 img{
+    width: 100%;
+}
 
 .work-outer-container .deco2{
     /* width: 100vw; */
-    height: 150px;
+    width: 40%;
     position: absolute;
     top: 50%;
     left: 0%;
 }
-
+.work-outer-container .deco2 img{
+    width: 100%;
+}
 

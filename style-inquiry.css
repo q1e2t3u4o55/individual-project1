@@ -1,10 +1,12 @@
 header .inquiry-banner{
     height: 50vh;
+    min-height: 250px;
 }
 header .inquiry-banner .bgc{
     height: 100%;
     overflow: hidden;
     background: url(./img/works-bg.png);
+    position: relative;
 }
 
 header .inquiry-banner .bgc .topic{
@@ -12,8 +14,8 @@ header .inquiry-banner .bgc .topic{
     display: flex;
     flex-direction: column;
     width: 54%;
-    top: 25%;
-    left: 22%;
+    top: 50%;
+    left: 32%;
     z-index: 1;
 }
 header .inquiry-banner .circle{
@@ -22,11 +24,11 @@ header .inquiry-banner .circle{
     border-radius: 50%;
     background-color: #F3F2F1;
     position: absolute;
-    left: 15%;
-    top: 15%;
-    z-index: 1;
+    left: -120px;
+    top: -90px;
+    z-index: -1;
 }
-header .inquiry-banner .bgc .topic :nth-child(1){
+header .inquiry-banner .bgc .topic .span-pri{
     font-size: 40px;
     font-family: "Noto serif TC";
     color: #988475;
@@ -34,29 +36,62 @@ header .inquiry-banner .bgc .topic :nth-child(1){
     font-weight: 600;
     margin-bottom: 20px;
 }
-
+.bread{
+    width: 50%;
+    max-width: 600px;
+}
+/* 
 header .inquiry-banner .bgc .topic :nth-child(2){
     font-size: 28px;
     font-family: "Noto serif TC";
     color: #988475;
     letter-spacing: 0.2em;
     font-weight: 600;
-    /* text-align: end; */
+    text-align: end;
+} */
+
+@media screen and (max-width:850px){
+    header .inquiry-banner .bgc .topic{
+        left: 22%;
+    }
+
+    .bread{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    header .inquiry-banner{
+        height: 35vh;
+    }
+    header .inquiry-banner .bgc .topic{
+        top: 150px;
+    }
+    
+    header .inquiry-banner .bgc .topic .span-pri{
+        font-size: 24px;
+
+    }
+    header .inquiry-banner .circle{
+        width: 100px;
+        height: 100px;
+        left: -70px;
+        top: -50px;
+
+    }
 }
 /* 表單區 */
 .inquiry-container{
-    width: 600px;
+    width: 50%;
     margin: auto;
     margin-top: 100px;
-    /* border-bottom: 1px solid #988475; */
-    padding: 50px;
-    /* border-radius: 5%; */
+
 }
 
 .inquiry-container > div{
+    margin: auto;
     margin-bottom: 50px;
-    /* display: flex; */
-    justify-content: space-between;
+    max-width: 600px;
+
 }
 
 
@@ -72,6 +107,7 @@ header .inquiry-banner .bgc .topic :nth-child(2){
 .inquiry-container > div > label{
     margin-bottom: 16px;
     font-size: 24px;
+    /* width: 50%; */
 
 }
 .inquiry-container input[type="text"], .inquiry-container .need-box textarea{
@@ -86,8 +122,8 @@ header .inquiry-banner .bgc .topic :nth-child(2){
     letter-spacing: 0.16em;
     padding: 8px;
     background-color: #fff;
-
 }
+
 .inquiry-container input[type="text"]:focus{
     outline: 1px solid #988475;
 }
@@ -102,17 +138,21 @@ header .inquiry-banner .bgc .topic :nth-child(2){
     width: 0.8em;
     height: 0.8em;
     border: 1px solid #988475;
-    /* border-radius: 50%; */
-    /* box-shadow: 0 0 0 3px #fff inset; */
+
     transform: translateY(0.5px);
     margin-right: 10px;
+
+
 }
 input[type="checkbox"]:checked + label::before{
-    background: url(./img/check-small.png);
+
+    /* background: url(./img/check-small.png); */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23988475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
     /* background-color: #988475; */
+
 }
 .inquiry-container .contact-time-option{
-    width: 50%;
+    width: 100%;
     justify-content: flex-start;
     margin-left: 10px;
 }
@@ -161,7 +201,7 @@ input[type="checkbox"]:checked + label::before{
 .inquiry-container #file-fake-button .txt:hover{
     background-color: #C5A68F;
 }
-.inquiry-container #file-fake-button img{
+.inquiry-container #file-fake-button svg{
     margin-right: 10px;
     width: 16px;
 }
@@ -180,6 +220,12 @@ input[type="checkbox"]:checked + label::before{
 .inquiry-container .button{
     display: flex;
     justify-content: center;
+    border: none;
+    outline: none;
+}
+.inquiry-container .button:active{
+    border: none;
+    outline: none;
 }
 
 .inquiry-container .button input{
@@ -194,7 +240,75 @@ input[type="checkbox"]:checked + label::before{
     letter-spacing: 0.16em;
     border-radius: 30px;
 }
+@media screen and (min-width:851px){
 .inquiry-container .button input:hover{
     background-color: #C5A68F;
     cursor: pointer;
+    border: none;
+    outline: none;
+}
+}
+@media screen and (max-width:850px){
+    .bread{
+        min-width: 330px;
+        margin: auto;
+    }
+    .inquiry-container{
+        min-width: 330px;
+    }
+    
+    .inquiry-container div label{
+        font-size: 20px;
+    }
+    .inquiry-container .button input {
+        font-size: 20px;
+        width: 100%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:400px){
+    .bread{
+        min-width: 0;
+        margin-inline: 20px;
+    }
+    .inquiry-container{
+        min-width: 0;
+        padding-inline: 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .inquiry-container > div > label{
+        margin-bottom: 10px;
+    }
+    .inquiry-container div label{
+        font-size: 16px;
+    }
+    .inquiry-container .contact-time-option > label {
+        margin-right: 0;
+    }
+    .inquiry-container #file-fake-button {
+        width: 120px;
+    }
+    .inquiry-container #file-fake-button svg{
+        margin-right: 5px;
+    }
+    .inquiry-container input[type="text"]{
+        height: 35px;
+    }
+    input[type="checkbox"]:checked + label::before{
+
+        /* background: url(./img/check-small.png); */
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23988475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+        /* background-color: #988475; */
+    
+    }
+    .inquiry-container .button input{
+        width: 100%;
+        font-size: 16px;
+        margin-inline: 10px;
+    }
 }

@@ -59,7 +59,9 @@ header .about-banner .bgc .topic .span-sub{
 .about-container .txt{
  padding-top: 45px;
 }
-
+.bread{
+    max-width: 800px;
+}
 @media screen and (max-width:850px){
     .about-container{
         grid-template-columns: repeat(1, 1fr);

@@ -244,7 +244,7 @@
         console.log(linkHref);// ./works.html
 
         // 檢查當前 <a> 是否對應當前頁面
-        if (linkHref === "./" + cleanPath) {
+        if (linkHref === "." + cleanPath) {
             // 禁用點擊
             console.log(this);
             $(this).css('pointer-events', 'none');

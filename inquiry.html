@@ -56,7 +56,7 @@
         </div>
         <div class="contact-time-box">
 
-            <label for="">方便聯絡時間</label>
+            <label>方便聯絡時間</label>
             <div class="contact-time-option">
             <input type="checkbox" name="contact-time" id="morning">
             <label for="morning">早上（9:00~12:00）</label>
@@ -179,7 +179,7 @@
     // 獲取當前頁面路徑
     let currentPage = window.location.pathname; // individual-project1/works.html
     let cleanPath = currentPage.substring(20); //works.html
-    console.log(cleanPath);///
+    console.log(cleanPath);//
     // 遍歷導覽列中的所有 <a> 標籤
     $('.nav-links a').each(function() {
         let linkHref = $(this).attr('href'); // 獲取每個 <a> 的 href
